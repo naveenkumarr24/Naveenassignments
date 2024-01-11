@@ -1,0 +1,140 @@
+1)
+public class FirstTenNaturalNumbers {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.print(i + " ");
+        }
+    }
+}
+
+2)
+
+import java.util.Scanner;
+
+public class SumAndAverage {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input the 5 numbers: ");
+
+        double sum = 0;
+        for (int i = 0; i < 5; i++) {
+            double num = scanner.nextDouble();
+            sum += num;
+        }
+
+        scanner.close();
+
+        double average = sum / 5;
+
+        System.out.println("The sum of 5 no is: " + sum);
+        System.out.println("The Average is: " + average);
+    }
+}
+
+3)
+
+import java.util.Scanner;
+
+public class EmployeeInformation {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter Employee ID: ");
+        int employeeId = scanner.nextInt();
+
+        System.out.print("Enter Employee Name: ");
+        String employeeName = scanner.next(); 
+
+        System.out.print("Enter Employee Salary: ");
+        double employeeSalary = scanner.nextDouble();
+
+        System.out.print("Enter Employee Address: ");
+        String employeeAddress = scanner.next(); 
+
+        System.out.print("Enter Employee Contact: ");
+        String employeeContact = scanner.next();
+
+        System.out.print("Enter Employee Gender (M/F): ");
+        char employeeGender = scanner.next().charAt(0);
+
+        scanner.close();
+
+        System.out.println("\nEmployee Information:");
+        System.out.println("Employee ID: " + employeeId);
+        System.out.println("Employee Name: " + employeeName);
+        System.out.println("Employee Salary: " + employeeSalary);
+        System.out.println("Employee Address: " + employeeAddress);
+        System.out.println("Employee Contact: " + employeeContact);
+        System.out.println("Employee Gender: " + employeeGender);
+    }
+}
+
+4)
+
+import Scanner
+class first{
+    public static void main(string args[]){
+        
+        Scanner input=new Scanner(System.in);
+        int number=input.(System.out);
+
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        } else {
+            System.out.println("The number is negative.");
+    }
+}}
+
+5)
+
+import java.util.Scanner;
+
+public class WeekdayNameGenerator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input number (1-7): ");
+        int number = scanner.nextInt();
+        scanner.close();
+
+        if (number >= 1 && number <= 7) {
+            String[] weekdays = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+            String weekday = weekdays[number - 1];
+            System.out.println(weekday);
+        } else {
+            System.out.println("Invalid input. Please enter a number between 1 and 7.");
+        }
+    }
+}
+
+6)
+
+import java.util.Scanner;
+
+public class GreatestNumber {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+     
+        System.out.print("Enter the first number: ");
+        double number1 = scanner.nextDouble();
+
+        System.out.print("Enter the second number: ");
+        double number2 = scanner.nextDouble();
+
+        System.out.print("Enter the third number: ");
+        double number3 = scanner.nextDouble();
+
+        
+        if (number1 >= number2 && number1 >= number3) {
+            System.out.println("The greatest number is: " + number1);
+        } else if (number2 >= number1 && number2 >= number3) {
+            System.out.println("The greatest number is: " + number2);
+        } else {
+            System.out.println("The greatest number is: " + number3);
+        }
+
+       
+        
+    }
+}

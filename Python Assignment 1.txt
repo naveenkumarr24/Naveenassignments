@@ -1,0 +1,46 @@
+1)
+
+a=1
+while a<1=0:
+    print(a)
+    a=a+1
+
+2)
+
+number = int(input("Enter number:"))
+sum = 0
+for i in range(number+1):
+  sum+=i
+print(sum)
+
+3)
+
+list = [45, 75, 120, 180, 200, 300, 540, 800]
+
+for num in list:
+    if num % 5 == 0 and num <= 150:
+        print(num)
+    if num > 500:
+        break
+
+4)
+
+num = int(input())
+count = 0
+
+while num != 0:
+    num //= 10
+    count += 1
+
+print("Number of digits: " + str(count))
+
+5)
+
+arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];     
+     
+print("Elements of given array present on odd position: ");        
+    
+for i in range(0, len(arr), 2):    
+    print(arr[i]);     
+
+
